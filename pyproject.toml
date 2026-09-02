@@ -1,0 +1,19 @@
+[project]
+name = "kvstore"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Maxim Merkulov", email = "m.merkulovdodo@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "grpcio>=1.83.1",
+    "grpcio-tools>=1.83.1",
+]
+
+[project.scripts]
+kvstore = "kvstore:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
